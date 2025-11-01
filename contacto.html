@@ -34,10 +34,37 @@
     </nav>
 <!--CONTENIDO PRINCIPAL-->
     <main class="container">
+        <!--section principal-->
             <h1>Contacto</h1>
+            <p>Estamos listos para recibirte. Escribinos o vení a visitarnos.</p>
+        <!--section contacto-->
+        <section class="section-contacto">
+            <h2>Nuestros Datos</h2>
+            <p><strong>direccion:</strong> Av. San Martín 1234, Buenos Aires</p>
+            <p><strong>telefono:</strong> (011) 4567-8900</p>
+            <p><strong>email:</strong> contacto@saboresdelsur.com</p>
+        </section>
+        <section class="formulario-contacto">
+            <h2 class="text-center mb-4">Contacto</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="exampleFormControlName1" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="exampleFormControlName1" placeholder="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">mensaje</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" placeholder="escribi tu mensaje..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </section>
     </main>
 <!--FOOTER-->
-    <footer class="footer bg-light">
+    <footer class="footer bg-dark py-2 mt-5 text-center text-white">
         <p>&copy; 2025 Sabores del Sur. Todos los derechos reservados.</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
