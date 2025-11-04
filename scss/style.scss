@@ -1,0 +1,39 @@
+// variables
+$color-principal: #6B3E26;
+$color-secundario:#F5EBDD;
+$color-acento:#A62C2B;
+$color-texto:#333333;
+$fuente-titulos:'Playfair Display', serif;
+$fuente-textos:'Open Sans', sans-serif;
+
+// RESET 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// BASE GENERAL
+body{
+    font-family: $fuente-textos;
+    background-color: $color-secundario;
+    color: $color-texto;
+    line-height: 1.6;
+}
+h1,h2,h3{
+    font-family: $fuente-titulos;
+    color: $color-principal;
+}
+a{
+    text-decoration: none;
+    color: $color-acento;
+    &:hover{
+        color: $color-principal;
+    }
+}
+// CONTAINER GENERAL
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}

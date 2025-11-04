@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #F5EBDD;
+  color: #333333;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: "Playfair Display", serif;
+  color: #6B3E26;
+}
+
+a {
+  text-decoration: none;
+  color: #A62C2B;
+}
+a:hover {
+  color: #6B3E26;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */
