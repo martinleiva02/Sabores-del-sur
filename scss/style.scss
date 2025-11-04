@@ -1,5 +1,5 @@
 // variables
-$color-principal: #6B3E26;
+$color-principal: #ae5e32;
 $color-secundario:#F5EBDD;
 $color-acento:#A62C2B;
 $color-texto:#333333;
@@ -31,9 +31,162 @@ a{
         color: $color-principal;
     }
 }
+button {
+    background-color: #a33e2b; 
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    transition:all 0.3s ease;
+
+    a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: 500;
+    }
+
+    &:hover {
+        background-color: darken(#a33e2b, 8%);
+        transform: translateY(-4px);
+    }
+}
 // CONTAINER GENERAL
 .container{
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+}
+// INDEX
+// section principal
+.section-principal{
+    background-image: url("../img/fondo-restaurante.jpg");
+    background-size: cover;
+    background-position:bottom;
+    color: white;
+    text-align: center;
+    padding: 150px 20px;
+    position: relative;
+}
+.container-principal{
+    background-color: 0,0,0,10;
+    display: inline-block;
+    padding: 30px;
+    border-radius: 10px;
+    h2{
+        font-size: 3rem;
+        font-weight: 700;
+    }
+    p{
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+}
+//section platos destacados
+.section-plato{
+    background-color: lighten($color-secundario, 5%);
+    padding: 60px 20px;
+    text-align: center;
+    h2{
+        color: $color-principal;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+}
+.container-plato{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.plato{
+    background-color: white ;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    &:hover{
+        transform: translateY(-5px);
+    }
+    img{
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+    }
+}
+// section nosotros
+.section-nosotros{
+    background-color: #f8f9fa;
+    padding: 80px 10px;
+    text-align: center;
+}
+.container-nosotros{
+    max-width: 800px;
+    margin: 0 auto;
+    p{
+        font-size: 1.1rem;
+        line-height: 1.7;
+        color: #333;
+        margin-bottom: 30px;
+    }
+}
+// section reseña
+.section-reseña{
+    background-color: #fff;
+    padding: 80px 10px;
+    text-align: center;
+}
+.container-reseña{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+
+    .reseña{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #f8f9fa;
+        padding: 25px 20px;
+        border-radius: 10px;
+        box-shadow: 0, 2px, 6px rgba(0, 0, 0, 0.08);
+        transition: transform 0.5 ease, box shadow 0.3s;
+        &:hover{
+        transform: translateY(-8px);
+        box-shadow: 0, 6px, 30px rgba(0, 0, 0, 0.731);
+        background-color: #fff;
+        }
+    }
+    h5{
+        color: $color-acento;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    p{
+        font-size: 1rem;
+        color: #444;
+        background-color: #f8f9fa;
+        padding: 20px;
+        border-radius: 10px;
+        line-height: 1.6;
+        box-shadow: 0,2px, 6px rgba(0,0,0,0.05);
+    }
+}
+// section llamado
+.section-llamado{
+    background: linear-gradient(135seg, $color-principal, #d65b45);
+    color: #fff;
+    text-align: center;
+    padding: 15px 10%;
+}
+.container-llamado{
+    max-width: 700px;
+    margin: 0 auto;
+    h2{
+        font-size: 2rem;
+        margin-bottom: 40px;
+        margin-top: 20px;
+        font-weight: 600;
+    }
 }
