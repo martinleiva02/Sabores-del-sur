@@ -260,7 +260,7 @@ span{
     color: #fff;
     text-align: center;
     padding: 15px 10%;
-     h3{
+    h3{
         font-size: 2rem;
         margin-bottom: 20px;
         margin-top: 20px;
@@ -365,5 +365,61 @@ img{
     padding: 10px 10%;
     button{
         margin-top: 30px;
+    }
+}
+//CONTACTO
+//section principal
+.contacto-principal{
+    padding: 10px 20px;
+    text-align: center;
+    h1{
+        font-size: 3rem;
+        color: $color-principal;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+}
+//section contacto
+.section-contacto{
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 3rem;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto 3rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    h2{
+        text-align: center;
+        color: $color-principal;
+        margin-bottom: 20px;
+    }
+    p{
+        margin-bottom: 1.5rem;
+        color: $color-texto;
+        strong{
+            color: black;
+        }
+    }
+}
+//section formulario
+.formulario-contacto{
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff8f0;
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    h2 {
+    color: #b84a1b;
+    }
+}
+.form-control{
+    border-radius: 5px;
+    border: 3px radius #000;
+    transition: box-shadow 0.2s ease;
+    &:focus{
+        border-color: #b84a1b;
+        box-shadow: 0 0 4px rgba(184, 74, 27, 0.3);
     }
 }

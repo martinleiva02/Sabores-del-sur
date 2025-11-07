@@ -365,4 +365,59 @@ button:hover {
   margin-top: 30px;
 }
 
+.contacto-principal {
+  padding: 10px 20px;
+  text-align: center;
+}
+.contacto-principal h1 {
+  font-size: 3rem;
+  color: #ae5e32;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.section-contacto {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  padding: 3rem;
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto 3rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.section-contacto h2 {
+  text-align: center;
+  color: #ae5e32;
+  margin-bottom: 20px;
+}
+.section-contacto p {
+  margin-bottom: 1.5rem;
+  color: #333333;
+}
+.section-contacto p strong {
+  color: black;
+}
+
+.formulario-contacto {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff8f0;
+  padding: 3rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.formulario-contacto h2 {
+  color: #b84a1b;
+}
+
+.form-control {
+  border-radius: 5px;
+  border: 3px radius #000;
+  transition: box-shadow 0.2s ease;
+}
+.form-control:focus {
+  border-color: #b84a1b;
+  box-shadow: 0 0 4px rgba(184, 74, 27, 0.3);
+}
+
 /*# sourceMappingURL=style.css.map */
