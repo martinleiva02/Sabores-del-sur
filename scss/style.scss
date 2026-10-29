@@ -41,7 +41,6 @@ a {
 .button {
     display: inline-block;
     background-color: #a33e2b;
-    border: none;
     padding: 12px 25px;
     border-radius: 5px;
     color: #fff;
@@ -62,7 +61,22 @@ a {
     margin: 0 auto;
     padding: 20px;
 }
+.section-llamado,
+.section-reserva,
+.llamado-nosotros,
+.llamado-galeria {
+    background: linear-gradient(135deg, $color-principal, #d65b45);
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+    border-radius: 10px;
 
+    h2,
+    h3 {
+        color: #fff;
+        margin-bottom: 25px;
+    }
+}
 // INDEX
 // section principal
 .section-principal {
@@ -199,13 +213,6 @@ a {
 }
 
 // section llamado
-.section-llamado {
-    background: linear-gradient(135deg, $color-principal, #d65b45);
-    color: #fff;
-    text-align: center;
-    padding: 15px 10%;
-}
-
 .container-llamado {
     max-width: 700px;
     margin: 0 auto;
@@ -290,31 +297,28 @@ a {
 
 // section llamado
 .section-reserva {
-    background: linear-gradient(135deg, $color-principal, #d65b45);
-    color: #fff;
-    text-align: center;
-    padding: 15px 10%;
-
     h3 {
         font-size: 2rem;
-        margin-bottom: 20px;
         margin-top: 20px;
         font-weight: 600;
     }
 }
 
+.principal-nosotros,
+.principal-galeria,
+.contacto-principal {
+    h1 {
+        font-size: 3rem;
+        color: $color-principal;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
 //NOSOTROS
 // section principal
 .principal-nosotros {
     padding: 60px 20px;
     text-align: center;
-
-    h1 {
-        font-size: 3rem;
-        color: $color-principal;
-        margin-bottom: 20px;
-        margin-top: 20px;
-    }
 }
 
 //section-historia
@@ -367,11 +371,6 @@ a {
 
 // section llamado
 .llamado-nosotros {
-    background: linear-gradient(135deg, $color-principal, #d65b45);
-    color: #fff;
-    text-align: center;
-    padding: 10px 10%;
-
     .button {
         margin: 20px;
     }
@@ -382,13 +381,6 @@ a {
 .principal-galeria {
     padding: 10px 20px;
     text-align: center;
-
-    h1 {
-        font-size: 3rem;
-        color: $color-principal;
-        margin-bottom: 20px;
-        margin-top: 20px;
-    }
 }
 
 //section-galeria
@@ -413,11 +405,6 @@ a {
 
 // section llamado
 .llamado-galeria {
-    background: linear-gradient(135deg, $color-principal, #d65b45);
-    color: #fff;
-    text-align: center;
-    padding: 10px 10%;
-
     .button {
         margin-top: 30px;
     }
@@ -428,13 +415,6 @@ a {
 .contacto-principal {
     padding: 10px 20px;
     text-align: center;
-
-    h1 {
-        font-size: 3rem;
-        color: $color-principal;
-        margin-bottom: 20px;
-        margin-top: 20px;
-    }
 }
 
 //section contacto
